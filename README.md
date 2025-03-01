@@ -9,6 +9,12 @@ We need to fix code to reproduce the issue.
 
 - [aqua](https://aquaproj.github.io/docs/install)
 
+## CI
+
+It would be great if we can reproduce the issue by CI.
+
+[workflow](.github/workflows/test.yaml)
+
 ## How To Reproduce
 
 1. Set up and confirm mage and go are installed by aqua:
