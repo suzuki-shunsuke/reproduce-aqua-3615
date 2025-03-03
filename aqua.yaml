@@ -1,8 +1,14 @@
 ---
 # yaml-language-server: $schema=https://raw.githubusercontent.com/aquaproj/aqua/main/json-schema/aqua-yaml.json
 registries:
-- type: standard
-  ref: v4.322.0 # renovate: depName=aquaproj/aqua-registry
+  - type: standard
+    ref: v4.322.0 # renovate: depName=aquaproj/aqua-registry
+  - name: local
+    type: local
+    path: registry.yaml
 packages:
-- name: golang/go@go1.24.0
-- name: magefile/mage@v1.15.0
+  - name: golang/go@go1.23.0
+    tags: ['first']
+  - name: mage@v1.15.0
+    registry: local
+    tags: ['release']

@@ -1,0 +1,11 @@
+---
+packages:
+  - name: mage
+    type: go_build
+    repo_owner: magefile
+    repo_name: mage
+    description: Mage tooling built from source since distributions are not maintained for different architectures as 2024.
+    files:
+      - name: mage
+        src: .
+        dir: mage-{{trimV .Version}}
